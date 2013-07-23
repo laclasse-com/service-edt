@@ -1,0 +1,27 @@
+language: ruby
+rvm:
+  - 1.9.3
+
+before_install:
+  - gem update --system
+  - gem --version
+
+before_script:
+  - rake install
+  
+script: "bundle exec rake spec"
+
+gemfile:
+  - Gemfile
+  
+services: 
+  - mysql
+
+branches:
+  only:   
+    - master
+
+notifications:
+  email:
+    recepients:
+      - pgl@erasme.org
