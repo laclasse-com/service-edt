@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <meta content='en' name='lang' />
+    <title><%= @title %></title>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js' type='text/javascript'></script>
+    <script src='/javascripts/application.js' type='text/javascript'></script>
+
+    <style type="text/css">
+      body { text-align:center;font-family:helvetica,arial;font-size:20px;color:#888;margin:20px}
+      input {font-size:13px;color:blue;}
+      button {margin:20px 0px 0px 540px;}
+      .txt {margin:0 auto;padding:20px;width:600px;text-align:left; border:4px dashed #ccc;}
+    </style>
+
+  </head>
+  <body>
+    <h2>Interface emplois du temps > laclasse.com</h2>
+      <div class="txt">
+        <%= yield %>
+      </div>
+  </body>
+</html>

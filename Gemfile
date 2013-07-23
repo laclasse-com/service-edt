@@ -2,8 +2,8 @@ source "https://rubygems.org"
 
 gem 'rake'
 gem 'sinatra'
-gem 'shotgun'
-gem 'haml'
+gem 'thin'
+gem 'filesize'
 
 # Sass & Compass
 gem 'sass'
@@ -17,7 +17,6 @@ group :development do
   gem 'guard-rake'
   gem 'guard-rspec'
   gem 'guard-bundler'
-  gem 'guard-shell'
   gem 'travis-lint'
 end
 
