@@ -5,6 +5,7 @@ include FileUtils::Verbose
 
 
 class ServiceEdt < Sinatra::Base
+  set :port, 80
 
   helpers do 
     def to_french(size)
